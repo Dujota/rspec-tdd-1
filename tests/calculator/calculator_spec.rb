@@ -9,7 +9,7 @@ RSpec.describe Calculator do
   context "adding two numbers together" do
     it "should return sum of two numbers" do
       result = Calculator.add @num1, @num2
-      expect(result).to eq 50
+      expect(result).to eq 60
     end
   end
   context "subtract two numbers together" do
@@ -28,15 +28,15 @@ RSpec.describe Calculator do
 
   context "devide two numbers together" do
     it "should return quotient of two numbers" do
-      result = Calculator.devide @num1, @num2
+      result = Calculator.divide @num1, @num2
       expect(result).to eq 0.2
     end
   end
 
   context "exponent two numbers together" do
     it "should return exponent of two numbers" do
-      result = Calculator.exponent @num1, @num2
-      expect(result).to eq 1e50
+      result = Calculator.exponent 8, 3
+      expect(result).to eq 512
     end
   end
 end
